@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Portfolio — W1AKTYWNY FOTO</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Układ siatki 3x2 z pliku portfolio1.html */
+    .portfolio-grid {
+      width: min(840px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .portfolio-grid .gallery-item {
+      margin: 0;
+      aspect-ratio: 0.72;
+      overflow: hidden;
+      background: #181818;
+      border: 2px solid #e9e9e9;
+      cursor: pointer;
+    }
+
+    .portfolio-grid .gallery-item img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      transition: transform .35s ease, opacity .35s ease;
+    }
+
+    .portfolio-grid .gallery-item:hover img {
+      transform: scale(1.025);
+      opacity: .92;
+    }
+
+    @media (max-width: 700px) {
+      .portfolio-grid { gap: 5px; }
+      .portfolio-grid .gallery-item { border-width: 1px; }
+    }
+
+    @media (max-width: 480px) {
+      .portfolio-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">W1AKTYWNY <span>FOTO</span></a>
+      <button class="menu" aria-label="Menu">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Start</a>
+        <a class="active" href="portfolio.html">Portfolio</a>
+        <a href="video.html">Video</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container fade">
+        <div class="eyebrow">Portfolio</div>
+        <h1>Moje realizacje</h1>
+        <p class="section-intro">Wybrane kadry z motoryzacji, portretów i wydarzeń. Kliknij zdjęcie, aby otworzyć je w pełnym ekranie.</p>
+      </div>
+    </section>
+
+    <!-- Sekcja 01: Motoryzacja (6 zdjęć) -->
+    <section class="section portfolio-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">01 / Motoryzacja</div>
+            <h2>Samochody</h2>
+          </div>
+          <a class="btn" href="galleries/motoryzacja.html">Cała galeria →</a>
+        </div>
+        <div class="portfolio-grid fade">
+          <div class="gallery-item"><img src="images/moto-01.avif" alt="Motoryzacja 01"></div>
+          <div class="gallery-item"><img src="images/moto-02.avif" alt="Motoryzacja 02"></div>
+          <div class="gallery-item"><img src="images/moto-03.avif" alt="Motoryzacja 03"></div>
+          <div class="gallery-item"><img src="images/moto-04.avif" alt="Motoryzacja 04"></div>
+          <div class="gallery-item"><img src="images/moto-05.avif" alt="Motoryzacja 05"></div>
+          <div class="gallery-item"><img src="images/moto-06.avif" alt="Motoryzacja 06"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sekcja 02: Portrety (6 zdjęć) -->
+    <section class="section portfolio-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">02 / Portrety</div>
+            <h2>Ludzie</h2>
+          </div>
+          <a class="btn" href="galleries/portrety.html">Cała galeria →</a>
+        </div>
+        <div class="portfolio-grid fade">
+          <div class="gallery-item"><img src="images/portrait-01.avif" alt="Portret 01"></div>
+          <div class="gallery-item"><img src="images/portrait-02.avif" alt="Portret 02"></div>
+          <div class="gallery-item"><img src="images/portrait-03.avif" alt="Portret 03"></div>
+          <div class="gallery-item"><img src="images/portrait-04.avif" alt="Portret 04"></div>
+          <div class="gallery-item"><img src="images/portrait-05.avif" alt="Portret 05"></div>
+          <div class="gallery-item"><img src="images/portrait-06.avif" alt="Portret 06"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sekcja 03: Eventy (6 zdjęć) -->
+    <section class="section portfolio-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">03 / Eventy</div>
+            <h2>Motoryzacyjne wydarzenia</h2>
+          </div>
+          <a class="btn" href="galleries/eventy.html">Wszystkie eventy →</a>
+        </div>
+        <div class="portfolio-grid fade">
+          <div class="gallery-item"><img src="images/eventy-portfolio/01.avif" alt="Eventy 01"></div>
+          <div class="gallery-item"><img src="images/eventy-portfolio/02.avif" alt="Eventy 02"></div>
+          <div class="gallery-item"><img src="images/eventy-portfolio/03.avif" alt="Eventy 03"></div>
+          <div class="gallery-item"><img src="images/eventy-portfolio/04.avif" alt="Eventy 04"></div>
+          <div class="gallery-item"><img src="images/eventy-portfolio/05.avif" alt="Eventy 05"></div>
+          <div class="gallery-item"><img src="images/eventy-portfolio/06.avif" alt="Eventy 06"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 W1AKTYWNY FOTO</div>
+  </footer>
+
+  <div class="lightbox" aria-hidden="true">
+    <button class="lb-close" aria-label="Zamknij">×</button>
+    <button class="lb-prev" aria-label="Poprzednie">‹</button>
+    <img src="" alt="">
+    <button class="lb-next" aria-label="Następne">›</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
