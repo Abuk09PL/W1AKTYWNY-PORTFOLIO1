@@ -1,1 +1,134 @@
-<!doctype html><html lang="pl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Video — W1AKTYWNY FOTO</title><link rel="stylesheet" href="style.css"></head><body><header class="nav"><div class="container nav-inner"><a class="brand" href="index.html">W1AKTYWNY <span>FOTO</span></a><button class="menu">☰</button><nav class="nav-links"><a href="index.html">Start</a><a href="portfolio.html">Portfolio</a><a class="active" href="video.html">Video</a><a href="kontakt.html">Kontakt</a></nav></div></header><main><section class="page-hero"><div class="container fade"><div class="eyebrow">Video</div><h1>Ruch. Dźwięk. Klimat.</h1><p class="section-intro">Rolki samochodowe, eventy i krótkie formy video.</p></div></section><section class="section" style="padding-top:20px"><div class="container"><div class="video-grid"><article class="card fade"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="Video 1" allowfullscreen></iframe></div><div class="card-body"><h3>Projekt video #1</h3><p class="muted">Podmień VIDEO_ID_1 na ID filmu z YouTube.</p></div></article><article class="card fade"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="Video 2" allowfullscreen></iframe></div><div class="card-body"><h3>Projekt video #2</h3><p class="muted">Podmień VIDEO_ID_2 na ID filmu z YouTube.</p></div></article><article class="card fade"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/VIDEO_ID_3" title="Video 3" allowfullscreen></iframe></div><div class="card-body"><h3>Projekt video #3</h3><p class="muted">Kolejny materiał.</p></div></article><article class="card fade"><div class="video-wrap"><iframe src="https://www.youtube.com/embed/VIDEO_ID_4" title="Video 4" allowfullscreen></iframe></div><div class="card-body"><h3>Projekt video #4</h3><p class="muted">Kolejny materiał.</p></div></article></div><div class="notice">Aby dodać film: skopiuj ID z adresu YouTube, np. z <b>youtube.com/watch?v=ABC123</b> wpisz tylko <b>ABC123</b> w miejsce VIDEO_ID.</div></div></section></main><footer><div class="container">© 2026 W1AKTYWNY FOTO</div></footer><script src="script.js"></script></body></html>
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Video — W1AKTYWNY FOTO</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card video {
+      width: 100%;
+      height: 100%;
+      min-height: 250px;
+      object-fit: cover;
+      display: block;
+      background: #000;
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">W1AKTYWNY <span>FOTO</span></a>
+      <button class="menu">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Start</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a class="active" href="video.html">Video</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="page-hero">
+      <div class="container fade">
+        <div class="eyebrow">Video</div>
+        <h1>Ruch. Dźwięk. Klimat.</h1>
+        <p class="section-intro">Rolki samochodowe, eventy i krótkie formy video.</p>
+      </div>
+    </section>
+    <section class="section" style="padding-top:20px">
+      <div class="container">
+        <div class="video-grid">
+          
+          <!-- YouTube 1 -->
+          <article class="card fade">
+            <div class="video-wrap">
+              <iframe src="https://www.youtube.com/embed/CVmNaQ7nxFQ" title="Positiveways 2026 Warszawa" allowfullscreen></iframe>
+            </div>
+            <div class="card-body">
+              <h3>Positiveways 2026 Warszawa</h3>
+              <p class="muted">Relacja z wydarzenia motoryzacyjnego w Warszawie.</p>
+            </div>
+          </article>
+
+          <!-- MP4 Plik 1 (były zablokowany film YT nr 2) -->
+          <article class="card fade">
+            <div class="video-wrap">
+              <video controls playsinline preload="metadata">
+                <source src="rolka2.mp4" type="video/mp4">
+                Twoja przeglądarka nie obsługuje wideo.
+              </video>
+            </div>
+            <div class="card-body">
+              <h3>Projekt video #2</h3>
+              <p class="muted">Plik wideo MP4.</p>
+            </div>
+          </article>
+
+          <!-- MP4 Plik 2 (były zablokowany film YT nr 3) -->
+          <article class="card fade">
+            <div class="video-wrap">
+              <video controls playsinline preload="metadata">
+                <source src="rolka3.mp4" type="video/mp4">
+                Twoja przeglądarka nie obsługuje wideo.
+              </video>
+            </div>
+            <div class="card-body">
+              <h3>Projekt video #3</h3>
+              <p class="muted">Plik wideo MP4.</p>
+            </div>
+          </article>
+
+          <!-- YouTube 2 -->
+          <article class="card fade">
+            <div class="video-wrap">
+              <iframe src="https://www.youtube.com/embed/MLhklhcW3nw" title="Fundacja Fun&Drive | Żyrardów" allowfullscreen></iframe>
+            </div>
+            <div class="card-body">
+              <h3>Fundacja Fun&Drive | Żyrardów</h3>
+              <p class="muted">Relacja z wydarzenia w Żyrardowie.</p>
+            </div>
+          </article>
+
+          <!-- YouTube 3 -->
+          <article class="card fade">
+            <div class="video-wrap">
+              <iframe src="https://www.youtube.com/embed/UX-DN-Porng" title="Youngtimer #3" allowfullscreen></iframe>
+            </div>
+            <div class="card-body">
+              <h3>Youngtimer #3</h3>
+              <p class="muted">Spotkanie klasycznej motoryzacji.</p>
+            </div>
+          </article>
+
+          <!-- MP4 Plik 3 (dodatkowa rolka) -->
+          <article class="card fade">
+            <div class="video-wrap">
+              <video controls playsinline preload="metadata">
+                <source src="rolka7.mp4" type="video/mp4">
+                Twoja przeglądarka nie obsługuje wideo.
+              </video>
+            </div>
+            <div class="card-body">
+              <h3>Projekt video #6</h3>
+              <p class="muted">Plik wideo MP4.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">© 2026 W1AKTYWNY FOTO</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
