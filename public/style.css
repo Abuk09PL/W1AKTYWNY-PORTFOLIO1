@@ -48,3 +48,27 @@
         font-size: 23px;
     }
 }
+
+    /* Logo WF w nagłówku każdej strony */
+    .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .brand::before {
+        content: "WF";
+        display: grid;
+        place-items: center;
+        width: 42px;
+        height: 42px;
+        border: 1px solid var(--gold);
+        border-radius: 8px;
+        color: var(--gold);
+        font-family: "Bebas Neue", Impact, sans-serif;
+        font-size: 22px;
+        font-style: italic;
+        letter-spacing: -1px;
+        background: linear-gradient(145deg, #15171a, #0e1013);
+        box-shadow: 4px 4px 8px #0a0b0d, -4px -4px 8px #181b1f;
+    }

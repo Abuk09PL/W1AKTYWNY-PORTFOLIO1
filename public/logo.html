@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Ikona Aplikacji</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #111316;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+                font-family: 'Bebas Neue', 'Arial', sans-serif;
+        }
+        .app-icon {
+            width: 250px;
+            height: 250px;
+            border-radius: 40px;
+            background: linear-gradient(145deg, #15171a, #0e1013);
+            box-shadow:  10px 10px 20px #0a0b0d, -10px -10px 20px #181b1f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .corners {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border: 1px solid transparent;
+        }
+        .top-left { top: 40px; left: 40px; border-top-color: #c8a24a; border-left-color: #c8a24a; }
+        .top-right { top: 40px; right: 40px; border-top-color: #c8a24a; border-right-color: #c8a24a; }
+        .bottom-left { bottom: 40px; left: 40px; border-bottom-color: #c8a24a; border-left-color: #c8a24a; }
+        .bottom-right { bottom: 40px; right: 40px; border-bottom-color: #c8a24a; border-right-color: #c8a24a; }
+        
+        .main-text {
+            color: #c8a24a;
+            font-size: 70px;
+            font-weight: bold;
+            font-style: italic;
+            letter-spacing: -4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-icon">
+        <div class="corners top-left"></div>
+        <div class="corners top-right"></div>
+        <div class="main-text">WF</div>
+        <div class="corners bottom-left"></div>
+        <div class="corners bottom-right"></div>
+    </div>
+</body>
+</html>
