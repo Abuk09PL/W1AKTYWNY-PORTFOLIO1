@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded',()=>{
+ const favicon=document.createElement('link');
+ favicon.rel='icon';
+ favicon.type='image/svg+xml';
+ favicon.href=location.pathname.includes('/galleries/')?'../logo.svg':'logo.svg';
+ document.head.appendChild(favicon);
  const menu=document.querySelector('.menu'),links=document.querySelector('.nav-links');
  if(menu) menu.addEventListener('click',()=>links.classList.toggle('open'));
  const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.08});
