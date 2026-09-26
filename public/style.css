@@ -49,3 +49,36 @@
     }
 }
 
+/* Cursor-following light for the home page hero. */
+.hero {
+    --mouse-x: 50%;
+    --mouse-y: 25%;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    background: var(--bg);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: min(760px, 90vw);
+    height: 360px;
+    left: calc(var(--mouse-x) - min(380px, 45vw));
+    top: calc(50% - 180px);
+    z-index: -1;
+    pointer-events: none;
+    background: radial-gradient(circle 280px at 50% 50%, rgba(200, 162, 74, .2), transparent 70%);
+    opacity: 0;
+    transition: opacity .35s ease;
+}
+
+.hero.cursor-active::before {
+    opacity: 1;
+}
+
+.hero > .container {
+    position: relative;
+    z-index: 1;
+}
+
